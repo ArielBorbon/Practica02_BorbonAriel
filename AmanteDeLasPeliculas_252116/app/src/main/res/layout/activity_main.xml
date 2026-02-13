@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imgBannerJohnWick"
-        android:layout_width="416dp"
-        android:layout_height="229dp"
+        android:layout_width="419dp"
+        android:layout_height="239dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="28dp"
         android:text="@string/rentar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMainJohnWick" />
@@ -51,8 +51,8 @@
         android:id="@+id/btnComprar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
         android:text="@string/comprar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMainJohnWick" />
@@ -113,7 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="@string/drama"
         app:layout_constraintStart_toEndOf="@+id/txtGenero"
         app:layout_constraintTop_toBottomOf="@+id/btnAccion" />
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="@string/hechos_reales"
         app:layout_constraintStart_toEndOf="@+id/btnDrama"
         app:layout_constraintTop_toBottomOf="@+id/btnDisparos" />
@@ -140,12 +140,14 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtSinopsis"
         android:layout_width="301dp"
         android:layout_height="69dp"
+        android:layout_marginTop="48dp"
         android:text="@string/sinopsis"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGenero" />
 
     <ImageView
         android:id="@+id/btnDescargar"
@@ -156,5 +158,25 @@
         app:layout_constraintStart_toEndOf="@+id/txtTitulo"
         app:layout_constraintTop_toBottomOf="@+id/imgBannerJohnWick"
         app:srcCompat="@drawable/ic_save" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/txtSinopsis"
+        app:srcCompat="@drawable/like" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSinopsis"
+        app:srcCompat="@drawable/corazon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
