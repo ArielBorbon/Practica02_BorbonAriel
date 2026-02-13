@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/nombre_pelicula"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/imgMainJohnWick"
+        app:layout_constraintTop_toBottomOf="@+id/imgBannerJohnWick" />
+
+    <ImageView
+        android:id="@+id/imgBannerJohnWick"
+        android:layout_width="416dp"
+        android:layout_height="229dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/bannerjohnwick" />
+
+    <ImageView
+        android:id="@+id/imgMainJohnWick"
+        android:layout_width="155dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBannerJohnWick"
+        app:srcCompat="@drawable/johnwick" />
+
+    <Button
+        android:id="@+id/btnRentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/rentar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainJohnWick" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/comprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainJohnWick" />
+
+    <ImageView
+        android:id="@+id/imgEstrella"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imgMainJohnWick"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/txtCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/calificacion"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imgEstrella"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtVistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/vistas"
+        app:layout_constraintStart_toEndOf="@+id/imgEstrella"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalificacion" />
+
+    <TextView
+        android:id="@+id/btnAccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/accion"
+        app:layout_constraintStart_toEndOf="@+id/txtGenero"
+        app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
+
+    <TextView
+        android:id="@+id/btnDisparos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/disparos"
+        app:layout_constraintStart_toEndOf="@+id/btnAccion"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
+
+    <TextView
+        android:id="@+id/btnDrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/drama"
+        app:layout_constraintStart_toEndOf="@+id/txtGenero"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccion" />
+
+    <TextView
+        android:id="@+id/btnHechosReales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hechos_reales"
+        app:layout_constraintStart_toEndOf="@+id/btnDrama"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisparos" />
+
+    <TextView
+        android:id="@+id/txtGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/genero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRentar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="301dp"
+        android:layout_height="69dp"
+        android:text="@string/sinopsis"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <ImageView
+        android:id="@+id/btnDescargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/imgBannerJohnWick"
+        app:srcCompat="@drawable/ic_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
