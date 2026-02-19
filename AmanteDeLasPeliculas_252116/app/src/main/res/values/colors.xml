@@ -6,4 +6,6 @@
     <color name="amarillo">#DCDBA504</color>
     <color name="naranja">#78632D</color>
     <color name="fondo">#D6D7D7</color>
+    <color name="fondo_modo_claro">#FFFFFF</color>
+    <color name="fondo_modo_oscuro">#000000</color>
 </resources>
