@@ -18,11 +18,12 @@
 
 
         <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="146dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="28dp"
-        app:srcCompat="@drawable/palomitas" />
+            android:id="@+id/imageButton"
+            android:layout_width="217dp"
+            android:layout_height="188dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/palomitas" />
 
         <TextView
             android:id="@+id/textView"
