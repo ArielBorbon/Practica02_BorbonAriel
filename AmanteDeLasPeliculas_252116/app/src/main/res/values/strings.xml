@@ -11,5 +11,9 @@
     <string name="drama">Drama</string>
     <string name="hechos_reales">Hechos Reales</string>
     <string name="sinopsis">"John Wick: Chapter 4" sigue al legendario asesino retirado John Wick en su búsqueda de venganza contra la Alta Mesa, enfrentándose a nuevos enemigos y aliados en un mundo de asesinos.</string>
+    <string name="tituloApp">JW Cinema</string>
+    <string name="nombreLogin">Nombre de Usuario:</string>
+    <string name="contrasenaLogin">Contraseña:</string>
+    <string name="botonLogin">Iniciar Sesion</string>
 
 </resources>
